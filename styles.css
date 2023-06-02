@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.header{
+    padding: 0 20px;
+    position: relative;
+    height: 100vh;
+    padding-top: 20px;
+    
+   
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5a37f8a849fc2bbd84457505/1513621215456-GRPNTQSOETWVUB5Y5QLR/scott-webb-186137.jpg" );
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    margin: auto;
+    max-width:1110px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container a{
+    color:#fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.container i {
+    color:#fff;
+    font-size: 24px;
+}
+
+
+
+.header h1{
+    margin-top: 120px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 99;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+
+.hero {
+    margin: auto;
+    max-width: 956px;
+    width: 100%;
+}
+.hero p{
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+    /* padding: 0 200px; */
+    line-height: 1.8;
+    font-size: 22px;
+}
+
+.hero a{
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 16px 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+}
+
+.hero a:hover{
+    letter-spacing: 2px;
+}
+
+.overlay{
+    position:absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+}
+
+.header .image{
+    display: block;
+    position:absolute;
+    inset: 0;
+    z-index: -2;  
+}
+blockquote{
+    text-align: center;
+    
+}
+
+.quote{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 956px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0 140px;
+    line-height: 1.6;
+}
+
+
+.quote figcaption{
+    margin-top: 20px;
+    color: rgba(26,26,26,.9);
+    opacity: .3;
+}
+#quote {
+    font-size: 50px;
+    
+    color: rgba(26,26,26,.9);
+    opacity: .3;
+    
+    
+}
+
+.quote hr {
+    max-width: 965px;
+    margin-top: 40px;
+    margin-right: 0 auto;
+    color: rgba(26,26,26,.9);
+    opacity: .3;
+}
+
+.contact {
+    margin: 60px auto 0 auto;
+    max-width: 965px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* flex-shrink: 1;
+    flex-grow: 1;
+    flex-wrap: nowrap;   */
+}
+
+.contact .card {
+    flex: 1;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h2{
+    margin-top: 20px;
+    color: #3d9991;
+    text-align: center;
+    font-size: 24px;
+    
+}
+
+.card p {
+    
+    margin-top: 16px;
+    line-height: 1.4;
+    font-size: 16px;
+    text-align: center;
+}
+
+.card a{
+    margin-top: 20px;
+    display: block;
+
+    text-align: center;
+    color: #3d9991;
+}
+
+.contact-hours {
+    max-width: 965px;
+    margin: auto;
+    margin-top: 80px;
+
+}
+
+.footer {
+    margin-top: 40px;
+    padding-bottom: 60px;
+    background-color: #80ab54;
+    /* padding-top: 20px; */
+    /* padding: 20px 0; */
+    color:  rgba(255,255,255,.4);
+    
+}
+
+.footer h2{
+    font-size: 22px;
+    margin-top: 60px;
+    margin-bottom: 4px;
+}
+
+.footer h3{
+    font-size: 16px;
+    margin: 16px 0 8px;
+}
+
+.footer .email {
+    color: rgba(255,255,255,.8);
+    letter-spacing: 2px;
+    padding-top: 60px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer h1{
+    margin-top: 40px;
+    text-align: center;
+    color: rgba(255,255,255,.4);
+    font-size: 32px;
+}
+
+.footer .hr{
+    margin-top: 60px;
+    background-color: rgba(255,255,255,.4);
+  
+    height: 1px;
+    
+}
+.address {
+    margin-top: 60px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 2.6;
+}
+
+#located{
+    margin-top: 60px;
+}
