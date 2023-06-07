@@ -10,11 +10,25 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="nav-menu hidden" id="nav-menu">
+        <ul>
+            <li><a href="#!">HOME</a></li>
+            <li><a>ABOUT</a></li>
+            <li><a>ABOUT</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>           
+        </ul>
+    </div>
    
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <a href="#!">BAMBOO HEALTHCARE</a>
-            <i class="fa-sharp fa-solid fa-bars"></i>
+            <div class="btn">
+                <i class="fa-solid fa-xmark hidden" id="close" ></i>
+                <i class="fa-sharp fa-solid fa-bars" id="open"  ></i>
+                
+            </div>
+
+
         </div>
         <div class="hero">
                 <h1>chăm sóc bạn bằng đôi tay hiểu biết</h1>
@@ -26,6 +40,8 @@
         <div class="overlay"></div>
         <!-- <div class="image"><img src="https://images.squarespace-cdn.com/content/v1/5a37f8a849fc2bbd84457505/1513621215456-GRPNTQSOETWVUB5Y5QLR/scott-webb-186137.jpg?format=2500w" alt=""> -->
         </div>
+
+
     </header>
     <div class="quote">
         <blockquote>
@@ -93,6 +109,6 @@
         </div>
     </div>
 </div>
- 
+<script src="script.js"></script>
 </body>
 </html>
