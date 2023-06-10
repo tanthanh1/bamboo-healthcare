@@ -32,6 +32,7 @@ body{
 
 .header.transform{
     transform: translateX(-260px);
+    transition: all 0.25s ease;
 }
 
 
@@ -43,6 +44,7 @@ body{
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    animation: feature-text-anim 0.75s ease-in-out;
 }
 
 .container a{
@@ -57,6 +59,7 @@ body{
 
 .hidden{
     display: none;
+
 }
 
 i.hidden{
@@ -67,7 +70,15 @@ i.hidden{
     position: absolute;
     color:#fff;
     font-size: 24px;
+    
+   
 }
+
+.container .btn i.transform{
+    transform: translateX(-260px);
+}
+
+
 #open{
     cursor: pointer;
 }
@@ -87,12 +98,17 @@ i.hidden{
     z-index: 99;
     text-transform: uppercase;
     line-height: 1.6;
+    transform: translateZ(0);
+    transition: all 0.25s ease ;
+    /* animation: slideInFromtLeft 1.5s ease-in; */
+    
 }
 
 .hero {
     margin: auto;
     max-width: 956px;
     width: 100%;
+    animation: feature-text-anim 0.75s ease-in-out;
 }
 .hero p{
     margin-top: 50px;
@@ -281,7 +297,7 @@ blockquote{
 }
 
 .nav-menu{
-
+    
     position: fixed;
     width: 260px;
     height: 100vh;
@@ -290,6 +306,9 @@ blockquote{
     right:0;
     padding-top: 40px;
     padding-left: 20px;
+    z-index: 999;
+    opacity: 0.8;
+    
     
     
 }
@@ -303,3 +322,43 @@ blockquote{
 
    color: #fff;
 }
+
+
+.nav-menu:focus{
+    outline: none;
+}
+.fixed-position{
+    overflow: hidden;
+    
+}
+
+
+@keyframes slideInFromtLeft{
+    0% {
+      transform:translateX(-100%);
+    }
+  
+    100%{
+      transform:translateX(0);
+    }
+  }
+  
+
+  @keyframes feature-text-anim{
+    0%{
+        opacity: 0;
+ 
+        transform: translate3d(0,10px,0);
+    }
+
+    75%{
+        opacity: 0;
+        transform: translate3d(0,10px,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+
+  }
+
