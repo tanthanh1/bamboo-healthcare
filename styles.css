@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&family=Poppins:wght@300;400;500;700&family=EB+Garamond:ital@0;1&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,8 +8,12 @@ a{
     text-decoration: none;
 }
 
+:root {
+    --primary-color: #80ab54;
+  }
+
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
@@ -23,37 +27,54 @@ body{
     height: 100vh;
     padding-top: 20px;
     /* background-color: rgba(0,0,0,0.3); */
-    
-   
-    background-image: url("https://images.squarespace-cdn.com/content/v1/5a37f8a849fc2bbd84457505/1513621215456-GRPNTQSOETWVUB5Y5QLR/scott-webb-186137.jpg" );
+    background-color: rgba(0,0,0,0.3);
+    /* background-color: rgba(0,0,0,0.3); */
+    background-image: url("./img/scott-webb-186137.jpg");
+    background-blend-mode: multiply;
+    /* background-image: url(./img/sudhev-suresh-y5UDML4IhHk-unsplash.jpg); */
     background-size: cover;
-    z-index: 2;
+    /* z-index: 999; */
+    transition: all 0.25s ease;
 }
 
-.header.transform{
+.web-wrapper{
+    transition: all 0.25s ease;
+}
+
+.web-wrapper.transform{
     transform: translateX(-260px);
     transition: all 0.25s ease;
 }
 
+body.transform{
+    padding-right: 260px;
+    transition: all 0.25s ease;
+}
 
+
+/* .web-wrapper{
+    
+    z-index: -10;
+} */
 
 .container {
     margin: 0 auto;
     /* width:1110px; */
-    max-width: 90%;
+    max-width: 95%;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
     animation: feature-text-anim 0.75s ease-in-out;
 }
 
-.container a{
+.logo a{
     color:#fff;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
+    letter-spacing: 2px;
 }
 
-.container .btn{
+.container .hambuger{
     position: relative;
 }
 
@@ -66,15 +87,17 @@ i.hidden{
     display: none;
 }
 
-.container .btn i {
+.container .hambuger i {
     position: absolute;
+    top:0;
+    right:0;
     color:#fff;
     font-size: 24px;
     
    
 }
 
-.container .btn i.transform{
+.container .hambuger i.transform{
     transform: translateX(-260px);
 }
 
@@ -90,16 +113,19 @@ i.hidden{
 
 
 .header h1{
+    font-family: 'Montserrat', sans-serif;
+
     margin-top: 120px;
     text-align: center;
     font-size: 60px;
     font-weight: 500;
     color: #fff;
-    z-index: 99;
+   
     text-transform: uppercase;
     line-height: 1.6;
     transform: translateZ(0);
     transition: all 0.25s ease ;
+    z-index: -2;
     /* animation: slideInFromtLeft 1.5s ease-in; */
     
 }
@@ -108,20 +134,24 @@ i.hidden{
     margin: auto;
     max-width: 956px;
     width: 100%;
-    animation: feature-text-anim 0.75s ease-in-out;
+    animation: feature-text-anim 0.5s ease-in-out;
 }
 .hero p{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    letter-spacing: 1px;
     margin-top: 50px;
     color: #fff;
     text-align: center;
     /* padding: 0 200px; */
-    line-height: 1.8;
+    line-height: 1.9;
     font-size: 22px;
 }
 
 .hero a{
     display: block;
     max-width: 200px;
+    font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     margin-top: 60px;
     border: 1px solid #fff;
@@ -136,17 +166,25 @@ i.hidden{
     
 }
 
-.hero a:hover{
-    letter-spacing: 2px;
-    background-color: #444;
+.hero strong{
+    background-color: var(--primary-color);
+    padding: 0 2px;
+    /* color: red !important; */
 }
 
-.overlay{
-    position:absolute;
-    inset: 0;
-    background-color: rgba(0,0,0,0.3);
-    z-index: -1;
+.hero a:hover{
+    scale:1.02;
+    /* letter-spacing: 2px; */
+    background-color: #80ab54;
+    transition : 0.25s ease ;
 }
+
+/* .overlay{
+    position:fixed ;
+    inset: 0 !important;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1111111 ;
+} */
 
 .header .image{
     display: block;
@@ -245,7 +283,7 @@ blockquote{
 .footer {
     margin-top: 40px;
     padding-bottom: 60px;
-    background-color: #80ab54;
+    background-color: var(--primary-color);
     /* padding-top: 20px; */
     /* padding: 20px 0; */
     color:  rgba(255,255,255,.4);
@@ -344,6 +382,8 @@ blockquote{
   }
   
 
+
+  
   @keyframes feature-text-anim{
     0%{
         opacity: 0;
@@ -360,5 +400,20 @@ blockquote{
         transform: translate3d(0,0,0);
     }
 
+  }
+
+
+
+  /* .image-wrapper {
+    margin: 10px; 
+
+  }
+   */
+  .image-wrapper img {
+    float: left;
+    margin-right: 10px; 
+    width: 150px;
+    height: 150px;
+    /* add some spacing between the image and the text */
   }
 

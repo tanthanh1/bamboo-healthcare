@@ -4,6 +4,8 @@
     const close=document.getElementById("close")
     const nav_menu=document.getElementById("nav-menu")
     const body=document.getElementById("body")
+
+    const web_wrapper=document.getElementById("web-wrapper")
     // let on_off= 0;
     // header.style.transform="translateX(-260px)"
     // document.getElementById("nav-menu").style.display="block"
@@ -11,20 +13,20 @@
 
     // open.addEventListener('click', () => console.log('he'))
     open.addEventListener ('click', () =>{
-        header.classList.add('transform');
+        web_wrapper.classList.add('transform');
         // header.classList.add('transform');
         nav_menu.classList.remove('hidden');
         open.classList.add('hidden');
         close.classList.remove('hidden')
         body.classList.add('fixed-position')
-        nav_menu.focus();
+        // nav_menu.focus();
         // on_off=1;
        
 
     })
 
     close.addEventListener ('click',()=>{
-        header.classList.remove('transform');
+        web_wrapper.classList.remove('transform');
         nav_menu.classList.add('hidden');
         open.classList.remove('hidden');
         close.classList.add('hidden')
