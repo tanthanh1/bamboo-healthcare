@@ -239,6 +239,12 @@ footer .open-day h3{
     text-align: center;
 }
 
+.updating{
+    font-size: 28px;
+    padding: 20px;
+    color: #999;
+}
+
 /* Animation */
 @keyframes feature-text-anim{
     0%{
