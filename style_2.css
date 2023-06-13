@@ -29,7 +29,7 @@ header .header-inner{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 22px 0;
+    padding: 32px 0;
     animation: feature-text-anim 0.25s ease-in-out;
    
 }
@@ -67,6 +67,7 @@ header .hambuger i:hover{
     width: 960px;
     max-width: 90%;
     margin: 96px auto;
+    animation: feature-text-anim 0.25s ease-in-out;
     /* height: calc(100vh - 34px); */
     /* border-bottom: 50px solid #000; */
 }   
