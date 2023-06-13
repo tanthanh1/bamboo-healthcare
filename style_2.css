@@ -47,7 +47,7 @@ header .hambuger{
 header .hambuger i{
     position: absolute;
     right:0;
-    top:0;
+    top:-4px;
     color:#fff;
     font-size: 24px;
 }
@@ -273,4 +273,62 @@ footer table th + th {
         transform: translate3d(0,0,0);
     }
 
+  }
+
+
+  @media(max-width:640px){
+
+    header .header-inner{   
+        max-width: 90%;
+ 
+       
+    }
+
+    header .logo a{
+        font-size: 16px;
+    }
+
+    main .content{
+        margin: 56px auto;
+    }
+
+    .content img{
+        width: 100%;
+        float: none;
+        margin-bottom: 12px;
+        
+    }
+
+    footer .email{
+        display: none;
+    }
+
+    footer .address{
+        font-size: 28px !important;
+        line-height: 1.4;
+    }
+
+    footer .office-hours, 
+    footer .open-day {
+        text-align: center;
+    }
+    footer table{
+        display: inline-block;
+    }
+
+    footer .footer_inner{
+        padding-top: 40px;
+    }
+
+    footer .office-hours{
+        margin-top: 0 !important;
+    }
+
+
+    footer .hr{
+        margin-top: 40px !important;
+    }
+    footer .contact{
+        margin-top: 40px !important;
+    }
   }

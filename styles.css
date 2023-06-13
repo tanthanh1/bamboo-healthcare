@@ -90,7 +90,7 @@ i.hidden{
 
 .container .hambuger i {
     position: absolute;
-    top:0;
+    top:-4px;
     right:0;
     color:#fff;
     font-size: 24px;
@@ -231,7 +231,7 @@ blockquote{
     opacity: .3;
 }
 
-.contact {
+.home-card {
     margin: 60px auto 0 auto;
     max-width: 965px;
     display: flex;
@@ -242,7 +242,7 @@ blockquote{
     flex-wrap: nowrap;   */
 }
 
-.contact .card {
+.home-card .card {
     flex: 1;
 }
 
@@ -346,7 +346,7 @@ footer table th + th {
 
 }
 
-.footer .contact-2{
+.footer .contact{
     margin-top: 60px;
     text-align: center;
     letter-spacing: 0;
@@ -443,3 +443,82 @@ footer table th + th {
     /* add some spacing between the image and the text */
   }
 
+  @media(max-width:640px){
+
+    .hero{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .hero h1{
+        font-size: 28px;
+        
+    }
+
+    .hero p{
+        font-size: 18px;
+    }
+
+
+
+    header .logo a{
+        font-size: 16px;
+    }
+
+    header .container{
+        max-width: 90%;
+    }
+
+    main .content{
+        margin: 56px auto;
+    }
+
+    .content img{
+        width: 100%;
+        float: none;
+        margin-bottom: 12px;
+        
+    }
+
+
+    .quote{
+        padding: 0 32px;
+    }
+
+    .home-card{
+      
+    }
+
+    footer .email{
+        display: none;
+    }
+
+    footer .address{
+        font-size: 28px !important;
+        line-height: 1.4;
+    }
+
+    footer .office-hours, 
+    footer .open-day {
+        text-align: center;
+    }
+    footer table{
+        display: inline-block;
+    }
+
+    footer .footer_inner{
+        padding-top: 40px;
+    }
+
+    footer .office-hours{
+        margin-top: 0 !important;
+    }
+
+
+    footer .hr{
+        margin-top: 40px !important;
+    }
+    footer .contact{
+        margin-top: 40px !important;
+    }
+  }
