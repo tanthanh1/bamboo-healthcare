@@ -33,6 +33,7 @@ body{
     background-blend-mode: multiply;
     /* background-image: url(./img/sudhev-suresh-y5UDML4IhHk-unsplash.jpg); */
     background-size: cover;
+    -moz-background-clip: ;
     /* z-index: 999; */
     transition: all 0.25s ease;
 }
@@ -465,6 +466,7 @@ footer table th + th {
         
         background-position-x: 55%;
         background-position-y: center;
+        /* background-attachment: fixed; */
   
     
     }
@@ -495,7 +497,12 @@ footer table th + th {
     }
 
     .home-card{
+        display: block;
       
+    }
+
+    .home-card .card{
+        padding: 32px;
     }
 
     footer .email{
