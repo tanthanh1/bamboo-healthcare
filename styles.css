@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&family=Poppins:wght@300;400;500;700&family=EB+Garamond:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&family=EB+Garamond:ital@0;1&display=swap');
 
 * {
     box-sizing: border-box;
@@ -33,7 +33,7 @@ body{
     background-blend-mode: multiply;
     /* background-image: url(./img/sudhev-suresh-y5UDML4IhHk-unsplash.jpg); */
     background-size: cover;
-    -moz-background-clip: ;
+    
     /* z-index: 999; */
     transition: all 0.25s ease;
 }
@@ -443,6 +443,108 @@ footer table th + th {
     height: 150px;
     /* add some spacing between the image and the text */
   }
+
+ /* Max width screen < 900px */
+
+
+  @media(max-width:900px){
+
+    .hero{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .hero h1{
+        font-size: 28px;
+        
+    }
+
+    .hero p{
+        font-size: 18px;
+    }
+
+
+    header {
+
+        
+        background-position-x: 55%;
+        background-position-y: center;
+        /* background-attachment: fixed; */
+  
+    
+    }
+
+
+    header .logo a{
+        font-size: 16px;
+    }
+
+    header .container{
+        max-width: 90%;
+    }
+
+    main .content{
+        margin: 56px auto;
+    }
+
+    .content img{
+        width: 100%;
+        float: none;
+        margin-bottom: 12px;
+        
+    }
+
+
+    .quote{
+        padding: 0 32px;
+    }
+
+    .home-card{
+        display: block;
+      
+    }
+
+    .home-card .card{
+        padding: 32px;
+    }
+
+    footer .email{
+        display: none;
+    }
+
+    footer .address{
+        font-size: 28px !important;
+        line-height: 1.4;
+    }
+
+    footer .office-hours, 
+    footer .open-day {
+        text-align: center;
+    }
+    footer table{
+        display: inline-block;
+    }
+
+    footer .footer_inner{
+        padding-top: 40px;
+    }
+
+    footer .office-hours{
+        margin-top: 0 !important;
+    }
+
+
+    footer .hr{
+        margin-top: 40px !important;
+    }
+    footer .contact{
+        margin-top: 40px !important;
+    }
+  }
+
+
+
+/* Max width screen < 640px */
 
   @media(max-width:640px){
 
