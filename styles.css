@@ -26,15 +26,12 @@ body{
     position: relative;
     height: 100vh;
     /* padding-top: 20px; */
-    /* background-color: rgba(0,0,0,0.3); */
     background-color: rgba(0,0,0,0.3);
-    /* background-color: rgba(0,0,0,0.3); */
     background-image: url("./img/scott-webb-186137.jpg");
     background-blend-mode: multiply;
-    /* background-image: url(./img/sudhev-suresh-y5UDML4IhHk-unsplash.jpg); */
+
     background-size: cover;
-    
-    /* z-index: 999; */
+
     transition: all 0.25s ease;
 }
 
@@ -138,6 +135,8 @@ i.hidden{
     width: 100%;
     animation: feature-text-anim 0.5s ease-in-out;
 }
+
+
 .hero p{
     font-family: 'EB Garamond', serif;
     font-style: italic;
@@ -238,6 +237,8 @@ blockquote{
     display: flex;
     justify-content: center;
     gap: 20px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
     /* flex-shrink: 1;
     flex-grow: 1;
     flex-wrap: nowrap;   */
@@ -445,6 +446,70 @@ footer table th + th {
     /* add some spacing between the image and the text */
   }
 
+  .section_a{
+    margin-top: 60px;
+       max-width: 965px;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+  }
+
+  .section_a .title {
+    display: inline-block;
+    position: relative;
+    font-size: 28px;
+    line-height: 2.4;
+    font-weight: 600;
+    /* color: var(--primary-color) */
+  }
+
+  .section_a_grid {
+    margin-top: 40px;
+    display: grid;
+    column-gap: 40px;
+    row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  .section_a_grid img{
+    width: 100%;
+
+  }
+
+
+  .section_a .title::before{
+    position:absolute;
+    right:25%;
+    bottom: 0;
+    content:"";
+    width:50%;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+  }
+
+
+  .grid_item {
+    /* background-color: var(--primary-color); */
+ 
+   
+  }
+    .grid_item p{
+        /* margin-top: 10px; */
+        padding:6px 40px;
+        font-size: 14px;
+        line-height: 1.4;
+        /* color: #3d9991; */
+        color:#000;
+        
+  }
+
+
+
+ 
+
+
  /* Max width screen < 900px */
 
 
@@ -639,5 +704,20 @@ footer table th + th {
     }
     footer .contact{
         margin-top: 40px !important;
+    }
+
+
+    .section_a_grid {
+        display:block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section_a_grid .grid_item{
+        margin-bottom: 20px;
+    }
+
+    .section_a .title{
+        font-size: 22px;
     }
   }
