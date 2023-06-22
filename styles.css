@@ -71,6 +71,7 @@ body.transform{
     flex-direction: column;
     max-height: 100px;
     align-items: center;
+    gap: 20px;
     /* justify-content: center; */
     /* align-content: center; */
    
@@ -96,7 +97,7 @@ body.transform{
 
 header .logo img{
    
-    height:60px;
+    height:80px;
  }
 
 i.hidden{
