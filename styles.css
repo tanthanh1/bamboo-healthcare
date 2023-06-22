@@ -66,6 +66,18 @@ body.transform{
     animation: feature-text-anim 0.75s ease-in-out;
 }
 
+.logo{
+    display: flex;
+    flex-direction: column;
+    max-height: 100px;
+    align-items: center;
+    /* justify-content: center; */
+    /* align-content: center; */
+   
+}
+
+
+
 .logo a{
     color:#fff;
     font-size: 18px;
@@ -81,6 +93,11 @@ body.transform{
     display: none;
 
 }
+
+header .logo img{
+   
+    height:60px;
+ }
 
 i.hidden{
     display: none;
@@ -474,7 +491,8 @@ footer table th + th {
 
   .section_a_grid img{
     width: 100%;
-
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
   }
 
 
@@ -640,9 +658,13 @@ footer table th + th {
     }
 
 
+
+
     header .logo a{
         font-size: 16px;
     }
+
+   
 
     header .container{
         max-width: 90%;
